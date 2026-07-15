@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <style>
+        /* === ESTILOS SECCIÓN NOSOTROS === */
+        .nosotros {
+            background: #D8C3A5;
+            padding: 60px 20px;
+        }
+        
+        .nosotros-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nosotros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .nosotros-img img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .nosotros-texto h2 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+        
+        .nosotros-texto h2 span {
+            color: #c0392b;
+        }
+        
+        .nosotros-descripcion {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .nosotros-beneficios {
+            margin: 30px 0;
+        }
+        
+        .beneficio-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+        
+        .beneficio-icono {
+            background: #c0392b;
+            color: white;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .beneficio-info h4 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .beneficio-info p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        
+        .btn-asesor {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn-asesor:hover {
+            background: #219a52;
+        }
+        
+        /* === SECCIÓN CIFRAS === */
+        .cifras {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .cifras-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .cifra-numero {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #c0392b;
+        }
+        
+        @media (max-width: 768px) {
+            .nosotros-texto h2 {
+                font-size: 1.8rem;
+            }
+            .nosotros {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="nosotros-container">
+            <div class="nosotros-grid">
+                
+                <!-- Imagen -->
+                <div class="nosotros-img">
+                    <img src="img/equipoooo para nosotros.png" 
+                         alt="Equipo de Agencia Viajera 7 Maravillas">
+                </div>
+
+                <!-- Texto -->
+                <div class="nosotros-texto">
+                    <h2>
+                        Somos Agencia Viajera <span>7 Maravillas</span>
+                    </h2>
+                    
+                    <p class="nosotros-descripcion">
+                        Desde Chimbote para el mundo. Llevamos 8 años cumpliendo el sueño de viajar a las 7 maravillas del mundo moderno. 
+                        No vendemos paquetes, creamos experiencias que te cambian la vida.
+                    </p>
+
+                    <div class="nosotros-beneficios">
+                        <!-- Item 1 -->
+                        <div class="beneficio-item">
+                            <div class="beneficio-icono">✓</div>
+                            <div class="beneficio-info">
+                                <h4>Guías Expertos Certificados</h4>
+                                <p>Nuestro equipo vive en cada destino. Conocemos atajos, historias y los mejores spots para tus fotos.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="beneficio-item">
+                            <div class="beneficio-icono">✓</div>
+                            <div class="beneficio-info">
+                                <h4>Precios Justos, Cero Sorpresas</h4>
+                                <p>Todo incluido desde que sales de Lima. Vuelos, hotel 4★, entradas y comidas. Lo que ves es lo que pagas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="beneficio-item">
+                            <div class="beneficio-icono">✓</div>
+                            <div class="beneficio-info">
+                                <h4>+1200 Viajeros Felices</h4>
+                                <p>Peruanos de Trujillo, Chimbote, Lima y todo el país ya visitaron su maravilla soñada con nosotros.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/51922087273?text=Hola,%20quiero%20conocer%20más%20de%20la%20agencia" 
+                       class="btn-asesor">
+                       Hablar con un Asesor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CIFRAS -->
+    <section class="cifras">
+        <div class="cifras-grid">
+            <div>
+                <div class="cifra-numero">8</div>
+                <p>Años de Experiencia</p>
+            </div>
+            <div>
+                <div class="cifra-numero">7</div>
+                <p>Maravillas Cubiertas</p>
+            </div>
+            <div>
+                <div class="cifra-numero">1200+</div>
+                <p>Clientes Satisfechos</p>
+            </div>
+            <div>
+                <div class="cifra-numero">24/7</div>
+                <p>Soporte en Viaje</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

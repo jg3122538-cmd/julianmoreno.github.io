@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        /* === ESTILOS SECCIÓN CONTACTO === */
+        .contacto {
+            background: #D8C3A5;
+            padding: 60px 20px;
+        }
+        
+        .contacto-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contacto-titulo {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .contacto-titulo h2 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+        
+        .contacto-titulo h2 span {
+            color: #c0392b;
+        }
+        
+        .contacto-titulo p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contacto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: start;
+        }
+        
+        /* Tarjetas de información */
+        .contacto-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: start;
+            gap: 20px;
+        }
+        
+        .info-icono {
+            background: #c0392b;
+            color: white;
+            min-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+        
+        .info-detalle h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .info-detalle p, .info-detalle a {
+            color: #666;
+            font-size: 0.95rem;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+        
+        .info-detalle a:hover {
+            color: #c0392b;
+        }
+        
+        /* Formulario */
+        .contacto-formulario {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-grupo {
+            margin-bottom: 20px;
+        }
+        
+        .form-grupo label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .form-grupo input,
+        .form-grupo textarea,
+        .form-grupo select {
+            width: 90%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: border 0.3s;
+        }
+        
+        .form-grupo input:focus,
+        .form-grupo textarea:focus,
+        .form-grupo select:focus {
+            outline: none;
+            border-color: #c0392b;
+        }
+        
+        .form-grupo textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .btn-enviar {
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-enviar:hover {
+            background: #219a52;
+        }
+        
+        .btn-whatsapp {
+            display: block;
+            width: 90%;
+            background: #25D366;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+        
+        @media (max-width: 768px) {
+            .contacto-titulo h2 {
+                font-size: 1.8rem;
+            }
+            .contacto {
+                padding: 40px 20px;
+            }
+            .contacto-formulario {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-container">
+            
+            <div class="contacto-titulo">
+                <h2>Contáctanos y <span>Planea tu Viaje</span></h2>
+                <p>¿Listo para conocer una maravilla? Escríbenos y un asesor te ayudará a armar tu paquete ideal sin compromiso.</p>
+            </div>
+
+            <div class="contacto-grid">
+                
+                <!-- Información de contacto -->
+                <div class="contacto-info">
+                    
+                    <div class="info-card">
+                        <div class="info-icono">📍</div>
+                        <div class="info-detalle">
+                            <h4>Ubicación</h4>
+                            <p>Av. centenario 542, Of. 201<br>Huaraz, Ancash - Perú</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icono">📱</div>
+                        <div class="info-detalle">
+                            <h4>WhatsApp / Teléfono</h4>
+                            <p><a href="https://wa.me/51922087273">+51 922087273</a><br>
+                            <a href="tel:+51922087273">(043) 32-1122</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icono">✉️</div>
+                        <div class="info-detalle">
+                            <h4>Correo</h4>
+                            <p><a href="mailto:jg3122538@gmail.com">jg3122538@gmail.com</a><br>
+                            <a href="mailto:jg3122538@gmail.com">jg3122538@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icono">🕐</div>
+                        <div class="info-detalle">
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 am - 7:00 pm<br>
+                            Sábados: 9:00 am - 1:00 pm</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Formulario -->
+                <div class="contacto-formulario">
+                    <form action="https://formsubmit.co/jg3122538@gmail.com" method="POST">
+                        
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="telefono">Celular / WhatsApp</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 999 999 999" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="Ej: juan@gmail.com" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="maravilla">¿Qué maravilla te interesa?</label>
+                            <select id="maravilla" name="maravilla" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="machu-picchu">Machu Picchu - Perú</option>
+                                <option value="chichen-itza">Chichén Itzá - México</option>
+                                <option value="cristo-redentor">Cristo Redentor - Brasil</option>
+                                <option value="coliseo">Coliseo Romano - Italia</option>
+                                <option value="taj-mahal">Taj Mahal - India</option>
+                                <option value="petra">Petra - Jordania</option>
+                                <option value="muralla-china">Gran Muralla - China</option>
+                                <option value="varias">Quiero cotizar varias</option>
+                            </select>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="mensaje">Cuéntanos sobre tu viaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Ej: Somos 2 personas, queremos viajar en julio por 5 días..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Consulta</button>
+                        
+                        <a href="https://wa.me/51922087273?text=Hola,%20quiero%20cotizar%20un%20viaje%20a%20las%207%20maravillas" 
+                           class="btn-whatsapp">
+                           💬 Escribir por WhatsApp
+                        </a>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

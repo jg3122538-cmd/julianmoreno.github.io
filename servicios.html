@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours 7 Maravillas del Mundo | Agencia Viajera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background: #D8C3A5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/photo-logo.jpg) center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .intro h2 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+        
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .tarjeta {
+            background: rgb(168, 160, 160);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tarjeta img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .tarjeta-contenido {
+            padding: 25px;
+        }
+        
+        .tarjeta h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #c0392b;
+        }
+        
+        .tarjeta .pais {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .tarjeta p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .precio {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #c0392b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #a93226;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .intro h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tours a las 7 Maravillas del Mundo</h1>
+        <p>Vive la historia, la cultura y la magia en cada destino</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Nuestros Paquetes de Viaje</h2>
+            <p>Elige tu próxima aventura. Incluye vuelos, hotel 4 estrellas, guías certificados y entradas. Salidas desde Lima.</p>
+        </div>
+
+        <div class="servicios">
+            <!-- 1. Machu Picchu -->
+            <div class="tarjeta">
+                <img src="img/potho-machupichu.jpg" alt="Machu Picchu">
+                <div class="tarjeta-contenido">
+                    <h3>Machu Picchu</h3>
+                    <p class="pais">Cusco, Perú</p>
+                    <p>Tour 4 días por la ciudadela inca. Incluye Tren Vistadome, bus y guía. Visita al Valle Sagrado.</p>
+                    <div class="precio">Desde $450 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Machu%20Picchu" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- 2. Chichén Itzá -->
+            <div class="tarjeta">
+                <img src="img/photo-chichen.jpg" alt="Chichén Itzá">
+                <div class="tarjeta-contenido">
+                    <h3>Chichén Itzá</h3>
+                    <p class="pais">Yucatán, México</p>
+                    <p>Paquete 5 días. Incluye Chichén Itzá, cenotes sagrados, Cancún y Playa del Carmen con todo incluido.</p>
+                    <div class="precio">Desde $780 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Chichén%20Itzá" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- 3. Cristo Redentor -->
+            <div class="tarjeta">
+                <img src="img/photo-crito redentor.jpg" alt="Cristo Redentor">
+                <div class="tarjeta-contenido">
+                    <h3>Cristo Redentor</h3>
+                    <p class="pais">Río de Janeiro, Brasil</p>
+                    <p>Tour 6 días. Subida al Corcovado, Pan de Azúcar, playas de Copacabana y tour por favelas.</p>
+                    <div class="precio">Desde $890 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Cristo%20Redentor" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- 4. Coliseo Romano -->
+            <div class="tarjeta">
+                <img src="img/david-kohler-VFRTXGw1VjU-unsplash.jpg" alt="Coliseo de Roma">
+                <div class="tarjeta-contenido">
+                    <h3>Coliseo Romano</h3>
+                    <p class="pais">Roma, Italia</p>
+                    <p>Circuito Europa 10 días. Roma, Vaticano, Florencia y Venecia. Entradas sin colas al Coliseo.</p>
+                    <div class="precio">Desde $1950 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Coliseo%20Romano" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- 5. Taj Mahal -->
+            <div class="tarjeta">
+                <img src="img/photo-tal mahal.jpg" alt="Taj Mahal">
+                <div class="tarjeta-contenido">
+                    <h3>Taj Mahal</h3>
+                    <p class="pais">Agra, India</p>
+                    <p>Triángulo de Oro 8 días. Delhi, Agra y Jaipur. Visita al Taj Mahal al amanecer. Guía en español.</p>
+                    <div class="precio">Desde $1250 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Taj%20Mahal" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- 6. Petra -->
+            <div class="tarjeta">
+                <img src="img/ciudad de petra.jpg" alt="Petra">
+                <div class="tarjeta-contenido">
+                    <h3>Petra</h3>
+                    <p class="pais">Jordania</p>
+                    <p>Aventura 9 días por Jordania. Petra, Wadi Rum, Mar Muerto y Amán. Noche en campamento beduino.</p>
+                    <div class="precio">Desde $1680 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Petra" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- 7. Gran Muralla China -->
+            <div class="tarjeta">
+                <img src="img/photo-la gran muralla.jpg" alt="Gran Muralla China">
+                <div class="tarjeta-contenido">
+                    <h3>Gran Muralla China</h3>
+                    <p class="pais">Pekín, China</p>
+                    <p>Tour 12 días. Pekín, Xi'an y Shanghái. Caminata por la Muralla, Guerreros de Terracota y visa incluida.</p>
+                    <div class="precio">Desde $2100 USD</div>
+                    <a href="https://wa.me/51922087273?text=Quiero%20info%20de%20Gran%20Muralla" class="btn">Reservar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Agencia Viajera 7 Maravillas</strong></p>
+        <p>WhatsApp: +51 922 087 273 | Email: jg3122538@gmail.com</p>
+        <p>Huaraz, Perú | RUC: 20123456789</p>
+    </footer>
+</body>
+</html>

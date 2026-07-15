@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Maravillas - Ruta infinita</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="img/logo 1.png">
+  <style>
+
+/* ===== ESTILOS GENERALES ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-image: url(img/fondo2.jpg);
+    background-size: auto;
+    background-color: #d8c3a5;
+}
+
+
+
+h2{
+    text-align:center;
+    margin:30px 0;
+}
+
+/* ===== MENÚ FLEXBOX ===== */
+
+.menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50; /* El azul que tienes */
+    padding: 15px 40px;
+}
+
+.enlaces {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* Borde llamativo al pasar el mouse */
+.enlaces li a:hover {
+    border: 2px solid #00d4ff; /* Celeste neón */
+    background: rgba(0, 212, 255, 0.15);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
+    transform: translateY(-2px);
+}
+
+/* Para que "Inicio" quede con el brillo de tu foto */
+.enlaces li a.active {
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px #fff;
+}
+
+.logo img{
+    height:100px;
+    width:auto;
+}
+
+.enlaces{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.enlaces a{
+    color:white;
+    text-decoration:none;
+    padding:10px;
+}
+
+.enlaces a:hover{
+    background:#3498db;
+    border-radius:5px;
+
+}
+nav a {
+    font-size: 16px;
+}
+
+
+
+/* BANNER */
+
+.banner{
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-image:linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)), url(img/Machu_Picchu\,_Peru_\(2018\).jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color:white;
+}
+
+.contenido-banner{
+    width:80%;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.banner p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+
+
+/* BOTONES */
+
+.boton,
+.boton-tarjeta{
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding: 12px 20px;
+    border-radius:6px;
+    display:inline-block;
+    align-self: flex-start;
+    width: 120px;
+    margin: 0 auto;
+    transition:transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+
+.boton:hover,
+.boton-tarjeta:hover{
+    background:#0284c7;
+}
+
+
+
+
+/* SECCIONES */
+
+section{
+    padding:70px 8%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+
+
+/* TARJETAS */
+
+.contenedor-tarjetas{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:center;
+    gap: 20px;
+    
+    
+}
+
+.tarjeta{
+    background:rgb(168, 160, 160);
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    text-align:center;
+}
+
+.tarjeta h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.tarjeta p{
+    margin-bottom:20px;
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* NOSOTROS */
+
+.nosotros{
+    background:rgb(119, 116, 116);
+    color: white;
+}
+
+.contenedor{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+
+
+
+/* CONTACTO */
+
+.contacto{
+    text-align:center;
+}
+
+.contacto p{
+    margin:10px 0;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+
+/* ===== TABLET ===== */
+
+@media(max-width:992px){
+
+    .contenedor-tarjetas{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .tarjeta{
+       width: 100%;
+       background-color: #8fd5ed;
+    }
+}
+
+
+
+/* ===== CELULAR ===== */
+
+@media(max-width:768px){
+     .contenedor-tarjetas{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .tarjeta{
+        width: 100%;
+        background-color: #cdbe96;
+    }
+
+    
+    
+}
+ dialog {
+            background-color: #ffffff; 
+            border: none;              
+            border-radius: 12px;       
+            padding: 30px;            
+            max-width: 400px;          
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+            text-align: center;
+             /* Truco para centrar la alerta exactamente en medio de la pantalla */
+            position: fixed;           /* Se queda fija aunque bajes la página */
+            top: 45%;                  /* 50% desde arriba */
+            left: 47%;                 /* 50% desde la izquierda */
+            transform: translate(-30%, -30%); /* Ajuste fino para centrarla perfectamente */
+        }
+       
+       
+        /* 3. ESTILOS DEL TÍTULO DENTRO DE LA ALERTA */
+        dialog h2 {
+            margin-top: 0;             /* Quitamos el margen de arriba para que quede alineado */
+            color: #e74c3c;            /* Un color rojo suave para que parezca una advertencia */
+            font-size: 24px;           /* Tamaño de letra más grande */
+        }
+
+      
+      
+        /* 4. ESTILOS DEL BOTÓN DE CERRAR */
+        dialog button {
+            background-color: #3498db; /* Color de fondo azul */
+            color: white;              /* Letra blanca */
+            border: none;              /* Sin borde feo */
+            padding: 12px 24px;        /* Espacio dentro del botón (arriba/abajo, izquierda/derecha) */
+            border-radius: 6px;        /* Bordes ligeramente redondeados en el botón */
+            font-size: 16px;           /* Tamaño de la letra del botón */
+            font-weight: bold;         /* Letra en negrita */
+            margin-top: 15px;          /* Un poco de espacio arriba del botón */
+            cursor: pointer;           /* Cambia el cursor a una 'manito' al pasar el mouse */
+            transition: initial; /* Hace que el cambio de color sea suave al pasar el mouse */
+        }
+
+        /* 5. EFECTO AL PASAR EL MOUSE SOBRE EL BOTÓN (HOVER) */
+        dialog button:hover {
+            background-color: #2980b9; /* Cambia a un azul más oscuro al pasar el mouse */
+        }
+  </style>
+
+
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+    <header class="menu">
+        <nav>
+        <div class="logo">
+        <img src="img/logo sol.png" alt="logo" class="mi logo">
+        </div>
+            <ul class="enlaces">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+    <!-- INICIO -->
+    <section id="inicio" class="banner">
+        <div class="contenido-banner">
+            <h1>LAS 7 MARAVILLAS DEL MUNDO</h1>
+            <p>
+                Las 7 maravillas del mundo(como Machu Picchu en Perú, Chichén Itzá en México o el Coliseo Romano) representan el ingenio y la grandeza del ser humano.
+            </p>
+            <a href="#servicios" class="boton">Ver Más</a>
+        </div>
+    </section>
+
+   
+   
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="contenedor-tarjetas">
+
+            <div class="tarjeta">
+                <h3>la Gran Muralla China en China</h3>
+                <p>Es la mayor obra de ingeniería militar del mundo, 
+                    con una longitud de más de 21.000 kilómetros.</p>
+                    <img src="img/lagran muralla.jpg" class="card-img-top" alt="la gran muralla">
+                <a href="https://www.chinahighlights.com/greatwall/map.htm" class="boton-tarjeta">Ver Más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Petra en Jordania</h3>
+                <p>La antigua y extraordinaria ciudad de Petra, 
+                    en Jordania, es única, porque está esculpida 
+                    en piedra arenisca.</p>
+                    <img src="img/petra.jpg" class="card-img-top" alt="petra jordania">
+                <a href="https://whc.unesco.org/en/list/326/" class="boton-tarjeta">Ver Más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>el Cristo Redentor en Brasil</h3>
+                <p>El Cristo Redentor o Cristo del Corcovado es una 
+                    estatua art déco que representa a Jesús de Nazaret,
+                    con los brazos abiertos, mostrando a la ciudad de Río 
+                    de Janeiro, Brasil.</p>
+                    <img src="img/cristo redentor.jpg" class="card-img-top" alt="cristo redentor">
+                <a href="https://christ-the-redeemer.com/" class="boton-tarjeta">Ver Más</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Machu Picchu en Perú</h3>
+                <p>, una de las Siete Maravillas del Mundo Moderno, es la 
+                    ciudadela inca más famosa del mundo. Construida en el 
+                    siglo XV por el Inca Pachacútec, se ubica a 2,430 m s. n. m. en la
+                     región de Cusco y destaca por su impresionante
+                      ingeniería y perfecta armonía con el paisaje</p>
+                      <img src="img/images.jpg" class="card-img-top" alt="machupichu">
+                <a href="https://www.machupicchu.gob.pe/" class="boton-tarjeta">Ver Más</a>
+            </div>
+             <div class="tarjeta">
+                <h3>Chichén Itzá en México</h3>
+                <p>Chichén Itzá, ubicado en la península de Yucatán, 
+                    es una de las antiguas ciudades mayas más importantes
+                    Su arquitectura combina el brillante conocimiento 
+                    astronómico maya con influencias toltecas.</p>
+                    <img src="img/images (1).jpg" class="card-img-top" alt="chinché itzá">
+                <a href="https://www.chichenitza.com/es" class="boton-tarjeta">Ver Más</a>
+            </div>
+             <div class="tarjeta">
+                <h3>el Coliseo Romano en Italia </h3>
+                <p>Ubicado en el centro de Roma (Italia), fue construido 
+                    en el siglo I d.C. y tenía capacidad para 
+                    más de 50.000 espectadores. Es el símbolo más 
+                    imponente de la grandeza y arquitectura del Imperio Romano.</p>
+                    <img src="img/coliseo.jpg" class="card-img-top" alt="coliceo roma">
+                <a href="https://www.rome-museum.com/es/coliseo-romano.php" class="boton-tarjeta">Ver Más</a>
+            </div>
+             <div class="tarjeta">
+                <h3>el Taj Mahal en India</h3>
+                <p>El Taj Mahal es un majestuoso mausoleo de mármol
+                     blanco ubicado en la ciudad de Agra, estado de Uttar 
+                     Pradesh, India. Fue construido en el siglo XVII por el
+                      emperador mogol Shah Jahan en memoria de su esposa favorita, 
+                      Mumtaz Mahal</p>
+                      <img src="img/taj mahal.jpg" class="card-img-top" alt="">
+                <a href="https://www.tajmahal.gov.in/" class="boton-tarjeta">Ver Más</a>
+            </div>
+
+        </div>
+    </section>
+
+   
+   
+   
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <h2>Sobre Nosotros</h2>
+
+        <div class="contenedor">
+            <p>
+                Somos una empresa dedicada al turismo de las 7 maravillas, y educar a los jovenes
+                de hoy en dia para que se instrullan sobre los personajes
+                que construyeron los monumentos antiguos
+            </p>
+        </div>
+    </section>
+
+   
+   
+   
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+
+        <div class="contenedor contacto">
+            <p><strong>📧 Correo:</strong> jg3122538@gmail.com</p>
+            <p><strong>☎️ Teléfono:</strong> +51 922 087 273</p>
+        </div>
+    </section>
+
+    
+    
+    
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 RUTA INFINITA | Todos los derechos reservados</p>
+    </footer>
+      
+    <dialog open>
+        <h2>¡Alerta Importante!</h2>
+        <p>Este mensaje es para loa apacionados del mundo 👌.</p>
+        <form method="dialog">
+            <button>Entendido, cerrar alerta</button>
+        </form>
+    </dialog>
+
+
+</body>
+
+</html>
