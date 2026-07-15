@@ -100,6 +100,15 @@ h2{
 nav a {
     font-size: 16px;
 }
+      #menu{
+    display:none;/* Oculta el checkbox */
+}
+.menu-icon{
+    display:none;/* Oculta el icono en computadoras */
+    font-size: 30px;/* Tamaño del icono */
+    color:white;/* Color del icono */
+    cursor:pointer;/* Cambia el cursor a una mano */
+}
 
 
 
@@ -271,6 +280,12 @@ footer{
 /* ===== CELULAR ===== */
 
 @media(max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    #menu:checked~nav {
+    max-height: 500px;/* Expande el menú cuando el checkbox está marcado */
+    }
      .contenedor-tarjetas{
         grid-template-columns: repeat(1,1fr);
     }
